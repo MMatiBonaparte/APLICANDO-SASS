@@ -6,6 +6,7 @@
     margin: 0;
 }
 
+/* Grillas de mi web */
 #grilla {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -80,28 +81,38 @@ h1 {
 
 /* Aca comienza mi main */
 
+:root{
+    --Background-card: rgb(250, 249, 249);
+}
+
 .card1 {
+    background-color: var(--Background-card);
     grid-area: card1;
 }
 
 .card2 {
+    background-color: var(--Background-card);
     grid-area: card2;
 }
 
 .card3 {
+    background-color: var(--Background-card);
     grid-area: card3;
 }
 
 .card4 {
+    background-color: var(--Background-card);
     grid-area: card4;
 
 }
 
 .card5 {
+    background-color: var(--Background-card);
     grid-area: card5;
 }
 
 .card6 {
+    background-color: var(--Background-card);
     grid-area: card6;
 
 }
@@ -132,7 +143,7 @@ h3 {
 /* Mi footer */
 footer {
     grid-area: footer;
-    border: 2px solid black;
+    border-top: 3px solid black;
 }
 
 h4{
