@@ -1,0 +1,37 @@
+/* Estilo de mi header */
+header {
+    grid-area: header;
+}
+
+.navbar{
+    --bs-bg-opacity:0;
+}
+
+.logo-empresa {
+    width: 120px;
+    height: 100px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 20px;
+    padding-right: 15px;
+    &:hover {
+        color: black;
+    }
+}

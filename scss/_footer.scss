@@ -1,0 +1,34 @@
+/* Mi footer */
+footer {
+    grid-area: footer;
+    border-top: 3px solid black;
+}
+
+h4{
+    text-align: center;
+}
+
+.iconos-footer{
+   display: inline-flex;
+   justify-content: center;
+   width: 100%;
+}
+
+.bi{
+    top: 0;
+    font-size: 30px;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+.bi-facebook{
+    color: blue;
+}
+
+.bi-instagram{
+    color: red;
+}
+
+.font-footer{
+    text-align: center;
+}
