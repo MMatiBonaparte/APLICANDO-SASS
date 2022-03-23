@@ -1,0 +1,68 @@
+.catalogo_grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:"titulo titulo titulo"
+    "grilla1 grilla2 grilla3"
+    "grilla4 grilla5 grilla6";
+    align-items: center;
+    justify-items: center;
+}
+
+
+.titulo-preguntas{
+    grid-area: titulo;
+    margin: 1%;
+    font-size: 50px;
+}
+
+
+.catalogo__card1{
+    grid-area: grilla1;
+}
+
+.catalogo__card2{
+    grid-area: grilla2;
+}
+
+.catalogo__card3{
+    grid-area: grilla3;
+}
+
+.catalogo__card4{
+    grid-area: grilla4;
+}
+
+.catalogo__card5{
+    grid-area: grilla5;
+}
+
+.catalogo__card6{
+    grid-area: grilla6;
+}
+
+.button{
+    width: 100%;
+    height: 10%;
+    background-color: #31384A;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1.5;
+    margin: 1.5rem 0 3rem 0;
+    padding: 1rem;
+    border: 0.1rem solid;
+    border-radius: 1rem;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &__descarga{
+        color: white;
+    }
+}
+
+
+

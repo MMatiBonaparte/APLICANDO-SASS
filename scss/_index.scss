@@ -1,4 +1,18 @@
-.carousel{
+/* Grillas de mi web */
+#grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+        "carousel carousel carousel"
+        "titulo titulo titulo"
+        "carta1 carta2 carta3"
+        "carta4 carta5 carta6"
+        "footer footer footer";
+    justify-content: center;
+    align-content: center;
+}
+
+.carousel {
     grid-area: carousel;
     border: 2px solid black;
 }
@@ -9,57 +23,62 @@
     grid-area: titulo;
 }
 
-h1 {
-    text-align: center;
+@mixin estiloTitulo ($posicion,$tamanio,$color) {
+
+    text-align: $posicion; 
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: $tamanio; 
     margin: 5%;
-    color: rgb(0, 0, 0);
+    color: $color;
     font-weight: 900;
+}
+
+h1 {
+  @include estiloTitulo(center,40px,black);
 }
 
 /* Aca comienza mi main */
 
-.card1 {
-    background-color: $Background-card;
-    grid-area: card1;
+.carta1 {
+    background-color: $Background-carta;
+    grid-area: carta1;
 }
 
-.card2 {
-    background-color: $Background-card;
-    grid-area: card2;
+.carta2 {
+    background-color: $Background-carta;
+    grid-area: carta2;
 }
 
-.card3 {
-    background-color: $Background-card;
-    grid-area: card3;
+.carta3 {
+    background-color: $Background-carta;
+    grid-area: carta3;
 }
 
-.card4 {
-    background-color: $Background-card;
-    grid-area: card4;
-
-}
-
-.card5 {
-    background-color: $Background-card;
-    grid-area: card5;
-}
-
-.card6 {
-    background-color: $Background-card;
-    grid-area: card6;
+.carta4 {
+    background-color: $Background-carta;
+    grid-area: carta4;
 
 }
 
-.card-estilo {
+.carta5 {
+    background-color: $Background-carta;
+    grid-area: carta5;
+}
+
+.carta6 {
+    background-color: $Background-carta;
+    grid-area: carta6;
+
+}
+
+.carta-estilo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.img-card:hover {
+.img-carta:hover {
     transform: scale(1.2, 1.2);
     transition: 0.8s;
 }

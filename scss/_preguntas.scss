@@ -1,6 +1,6 @@
 /* Pagina de preguntas */
 .main-preguntas {
-    grid-area: card2;
+    grid-area: carta2;
 }
 
 
@@ -11,4 +11,9 @@
 .accordion{
     padding-top: 50px;
     padding-bottom: 120px;
+}
+
+.preguntas_link {
+    text-decoration: underline;
+    color: blue;
 }

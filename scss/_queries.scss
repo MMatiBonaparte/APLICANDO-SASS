@@ -1,0 +1,109 @@
+/* MEDIA QUERIES */
+@media screen and (max-width: 414px) {
+    #grilla {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+            "titulo"
+            "carta1"
+            "carta2"
+            "carta3"
+            "carta4"
+            "carta5"
+            "carta6"
+            "footer";
+        justify-content: center;
+        align-content: center;
+    }
+
+    .logo-empresa {
+        display: none;
+    }
+
+    a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        font-weight: normal;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    li {
+        padding: 2px;
+
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    /* catalogo */
+
+    .catalogo_grilla {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "titulo"
+            "grilla1"
+            "grilla2"
+            "grilla3"
+            "grilla4"
+            "grilla5"
+            "grilla6"
+    }
+
+    .imagen_1 {
+        grid-area: grilla1;
+        width: 100%;
+    }
+
+    .imagen_2 {
+        grid-area: grilla2;
+    }
+
+    .card-body{
+        grid-area: grilla3;
+    }
+
+    .imagen_4 {
+        grid-area: grilla4;
+    }
+
+    .imagen_5 {
+        grid-area: grilla5;
+    }
+
+    .imagen_6 {
+        grid-area: grilla6;
+    }
+
+  /* Contacto */ 
+
+  .contacto_contenedor{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  label{
+    width: 300px;
+}
+
+ /* Sobre nosotros */
+
+ .nosotros__contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "bloque1"
+    "bloque2";
+}
+.nosotros__div1{
+    display: none;
+}
+
+.nosotros__div2{
+    text-align: center;
+    padding: 5px;
+}
+
+}

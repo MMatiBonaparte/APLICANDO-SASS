@@ -1,0 +1,39 @@
+.nosotros_titulo{
+    margin: 0px;
+    border-bottom: 2px solid black;
+}
+
+.nosotros__contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "bloque1 bloque2";
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros__div1{
+    margin: 5%;
+    grid-area: bloque1;
+
+}
+
+.nosotros__div2{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    grid-area: bloque2;
+}
+
+.nosotros__button{
+    @extend .button;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &__descarga{
+        color: white;
+    }
+}
